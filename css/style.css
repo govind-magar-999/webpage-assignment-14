@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto:wght@700&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.nav-bar {
+    padding: 40px 40px 0 40px;
+}
+
+.hero-wrapper {
+    padding: 0 60px 0 60px;
+    margin-top: 60px;
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btn-wrapper {
+    text-align: right;
+}
+
+.empty-box {
+    color: #fff;
+    display: none;
+}
+
+.sub-headline {
+    align-self: flex-end;
+    color: #828282;
+}
+
+.nav-bar,
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #848484;
+}
+
+.nav-item:hover{
+    color: #000;
+}
+
+.social-item {
+    height: 32px;
+    width: 32px;
+    margin: 15px 5px;
+}
+
+.main-heading {
+    font-size: 70px;
+}
+
+.horizontal-line {
+    width: 80vw;
+}
+
+.dot {
+ color: #828282;
+}
+
+.fetures-list {
+    display: flex;
+}
+
+.line {
+    width: 2px;
+    background-color:#828282;
+    height: 50px;
+}
+
+.headline-invert {
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                 1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+.check-out {
+    color: #fff;
+    background-color: #333333;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+
+.pointed-line,
+.feature-items {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.feature-items {
+    align-items: flex-start;
+    gap: 50px;
+    margin-left: 20px;
+}
+
+.features-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.quote-icon {
+    font-size: 60px;
+}
+
+.quote-poster,
+.quote-text {
+    width: 300px;
+}
+
+.arrow-down {
+    display: flex;
+}
+
+.arrow-line {
+    width: 2px;
+    background-color: #828282;
+    height: 160px;
+    align-self: flex-end;
+}
+
+.arrow-line-one,
+.arrow-line-two {
+    width: 2px;
+    height: 50px;
+    background-color:#828282;
+    align-self: flex-end;
+}
+
+.arrow-line-one,
+.arrow-line-two {
+    position: relative;
+    left: 19px;
+    top: 7px;
+}
+
+.arrow-line-one {
+    transform: rotate(45deg);
+}
+
+.arrow-line-two {
+    transform: rotate(135deg);
+    left: -20px;
+}
+
+.line-one {
+    border: none;
+    height: 2px;
+    background: grey;
+}
+
+.feature-item:hover {
+    color: #000;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 600px) {
+    .hero {
+        align-items: flex-end;
+        justify-content: right;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .features-wrapper {
+        gap: 70px;
+        justify-content: flex-end;
+        margin: 40px 80px 0;
+    }
+
+    .quote-poster,
+    .quote-text {
+        width: 200px;
+    }
+
+    .hero-wrapper {
+        padding: 0 60px 0 60px;
+        margin-top: 0;
+    }
+
+    .horizontal-line {
+        width: 15vw;
+    }
+
+    body{
+        background-size: 40% 100vh;
+        background-image: url("../images/pexels-rfstudio-3819572.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .main-heading {
+        font-weight: 500;
+        font-size: 80px;
+        margin: 0;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .nav-item:hover{
+        font-size: 18px;
+    }
+
+    .hero {
+        align-items: flex-start;
+        justify-content: right;
+    }
+
+    .empty-box {
+        display: inline-block;
+        width: 100px;
+        height: 150px;
+        color: #fff;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .features-wrapper {
+        gap: 100px;
+
+    }
+
+    .quote-poster,
+    .quote-text {
+        width: 500px;
+    }
+
+    .main-heading {
+        font-size: 80px;
+    }
+
+    .horizontal-line {
+        width: 20vw;
+    }
+
+    .empty-box {
+        width: 200px;
+    }
+}
